@@ -3,7 +3,7 @@
 ## 소개
 AWS Lambda 는 서버, OS, 확장 성 등의 구성을 줄이기 위해 Amazon에서 제공하는 서버리스 컴퓨팅 서비스입니다. AWS Lambda는 AWS 클라우드에서 코드를 실행할 수 있습니다.
 AWS Lambda 기능을 트리거하는 다른 AWS 리소스의 이벤트에 대한 응답으로 실행됩니다.<br/>
-Spring Cloud Fuction 을 이용하면 AWS Lambda를 개발할 수 있습니다.
+Spring Cloud Function 을 이용하면 AWS Lambda를 개발할 수 있습니다.
 
 
 ## Maven Dependency
@@ -93,7 +93,7 @@ public class Response {
 
 
 ## AWS Lambda Handler
-Spring Cloud Function에서 AWS Lambda 전용으로 제공하는 Adapter라는 추상화 계층이 있습니다. AWS Adapter에는 SpringBootRequestHandler, SpringBootStreamHandler, FunctionInvokingS3EventHandler 등과 같이 사용할 수있는 여러 가지 reuest handler가 있습니다.
+Spring Cloud Function에서 AWS Lambda 전용으로 제공하는 Adapter라는 추상화 계층이 있습니다. AWS Adapter에는 SpringBootRequestHandler, SpringBootStreamHandler, FunctionInvokingS3EventHandler 등과 같이 사용할 수있는 여러 가지 request handler가 있습니다.
 ```java
 public class AwsLambdaFunctionHandler extends SpringBootRequestHandler<Request, Response> { 
 
